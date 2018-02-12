@@ -21,7 +21,7 @@ public class MovingCircle extends CircleShape {
 
       this.x += dt*vz;
 
-      if (this.x > 100){
+      if (this.radius > 100){
         this.vz = 1.5;
         this.x = boardWidth/2;
         this.y = boardHeight/2;
