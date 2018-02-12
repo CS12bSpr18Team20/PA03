@@ -30,7 +30,4 @@ public class MovingCircle extends CircleShape {
 
       super.update(dt);
     }
-
-
-    }
-  }
+}
