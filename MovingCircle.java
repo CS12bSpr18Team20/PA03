@@ -19,8 +19,6 @@ public class MovingCircle extends CircleShape {
     public void update(double dt){
       // change the properties of the CircleShape after dt seconds have elapsed.
 
-      this.x += dt*vz;
-
         if (this.x > 500){
           this.vz = 1.0;
           this.x = 250;
