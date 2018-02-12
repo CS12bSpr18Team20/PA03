@@ -21,11 +21,11 @@ public class MovingCircle extends CircleShape {
 
       this.x += dt*vz;
 
-      if (this.radius > 100){
-        this.vz = 1.5;
-        this.x = boardWidth/2;
-        this.y = boardHeight/2;
-        this.radius = Trans;
+        if (this.x > 500){
+          this.vz = 1.0;
+          this.x = 250;
+          this.y = 250;
+          this.radius = Trans/5;
       } // made the circles bulk up to a certain size and restart on the middle of the board with different transparent colors.
 
       super.update(dt);
