@@ -4,8 +4,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 /**
- * MovingCircle are crimson circles which move at a constant velocity
- * on the board and bounce off the edges. Each circle is given a different random transparency, and when time
+ * MovingCircle is a bunch of crimson circles which move on the board and bounce off the edges. 
+   Each circle is given a different random transparency, and when time
    passes, each circle will grow up and eventually restart on the middle with a different transparency.
 */
 
