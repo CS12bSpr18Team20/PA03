@@ -1,10 +1,20 @@
 public class SpeedyCircle extends CircleShape{
-  private int timesToEdge;
+  private int timesToEdge;  //instance variable; tracks how many times the circle goes off-board
+  /*
+    Creates a SpeedyCircle object that is blue and has not yet touched the edge.
+    Sets the SpeedyCircle to blue.
+  **/
   public SpeedyCircle(){
     super();
     this.color = new java.awt.Color(0,0,255);
     this.timesToEdge = 0;
   }
+  /*
+    Overrides CircleShape's keepOnBoard method to change the velocity each time
+    the circle touches the edge. Accesses this.vx, this.vy, this.x, this.y (all
+    instance variables of the CircleShape class), and this.timesToEdge (instance
+    variable unique to this class).
+  **/
   public void keepOnBoard(){
     if (this.x < this.radius) {
       // it went off the left edge! do something!
