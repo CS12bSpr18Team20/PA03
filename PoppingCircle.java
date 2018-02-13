@@ -8,7 +8,7 @@ package pa03;
 */
 public class PoppingCircle extends CircleShape{
 
-  private double vr=1.0;
+  private double count=1.0;
 
 	/**
 	 * create a size changing circle and set the color to green
@@ -25,11 +25,11 @@ public class PoppingCircle extends CircleShape{
   public void update(double dt){
     // change the properties of the CircleShape after dt seconds have elapsed.
 
-		this.radius += dt*vr;
+		this.radius += dt*count;
 
 
     if (this.radius > 100){
-      this.vr = 0;
+      this.count = 0;
       this.radius = 0;
     }
 
