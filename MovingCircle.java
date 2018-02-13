@@ -3,6 +3,12 @@ package pa03;
 import java.awt.Color;
 import java.awt.Graphics;
 
+/**
+ * MovingCircle are crimson circles which move at a constant velocity
+ * on the board and bounce off the edges. Each circle is given a different random transparency, and when time
+   passes, each circle will grow up and eventually restart on the middle with a different transparency.
+*/
+
 public class MovingCircle extends CircleShape {
 
     private int Trans = 0;
