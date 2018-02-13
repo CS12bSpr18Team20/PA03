@@ -1,3 +1,5 @@
+package pa03;
+
 public class SpeedyCircle extends CircleShape{
   private int timesToEdge;  //instance variable; tracks how many times the circle goes off-board
   /*
